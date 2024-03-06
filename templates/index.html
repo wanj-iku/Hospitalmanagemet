@@ -49,7 +49,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
+      <a href="index.html" class="logo me-auto"><img src="{% static 'assets/img/logo.png' %}" alt=""></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
@@ -59,7 +59,8 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
-          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+            <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+            
           <li class="dropdown"><a href="#"><span>ADMIN INTERFACE</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{% url 'register'%}">REGISTER</a></li>
@@ -294,7 +295,7 @@
               <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
             </div>
           </div>
-          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("assets/img/features.jpg");' data-aos="zoom-in"></div>
+          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("{% static 'assets/img/features.jpg' %}");' data-aos="zoom-in"></div>
         </div>
 
       </div>
